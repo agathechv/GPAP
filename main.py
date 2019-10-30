@@ -54,7 +54,7 @@ def download(file_id):
     return str_content
 
 def slackmsg(text_id):
-  slack_token = os.environ["SLACK_API_TOKEN"] #export SLACK_API_TOKEN=xoxb-7478435636-782916017780-kp78PDz826o8OCuO2C5Bo9r8
+  slack_token = os.environ["SLACK_API_TOKEN"] #export SLACK_API_TOKEN=xoxb-7...9r8
   client = slack.WebClient(token=slack_token)
 
   return client.chat_postMessage(
